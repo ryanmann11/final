@@ -1,0 +1,19 @@
+User:
+  name: string
+  email: string
+  password_digest: string
+  year: integer
+  firm: string  
+
+Meeting:
+  firstyear_user_id: integer 
+  secondyear_user_id: integer  
+  meeting_time: datetime
+  case_id: integer
+
+Case:
+  source_id: integer
+  title: string
+
+CaseSource:
+  source: string

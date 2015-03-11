@@ -1,0 +1,14 @@
+<h1 class="page-header">
+  All Meetings
+  <span class="pull-right">
+    <%= link_to "Sign up to give a case", new_meeting_path, class: 'btn btn-sm btn-success' %>
+  </span>
+</h3>
+
+<table class="table">
+  <% @meetings.each do |meeting| %>
+    <tr>
+    <td> <%= link_to meeting.meeting_time, meeting %> </td>
+    </tr>
+  <% end %>
+</table>
